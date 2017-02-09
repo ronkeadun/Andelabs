@@ -4,8 +4,16 @@ describe("Fizz Buzz tests ", function() {
     expect(fizzBuzz(3)).toBe('Fizz');
   });
 
+  it("should return 'Fizz' for number divisible by 3", function() {
+    expect(fizzBuzz(21)).toBe('Fizz');
+  });
+
   it("should return 'Buzz' for number divisible by 5", function() {
     expect(fizzBuzz(5)).toBe('Buzz');
+  });
+
+  it("should return 'Buzz' for number divisible by 5", function() {
+    expect(fizzBuzz(25)).toBe('Buzz');
   });
 
   it("should return 'FizzBuzz' for 15", function() {
